@@ -1,5 +1,5 @@
 
-import HerroSection from '../../HomePageComponent/HerroSection/HerroSection';
+import HerroSection from '../../Components/HomePageComponent/HerroSection/HerroSection';
 
 const Home = () => {
     return (

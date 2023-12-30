@@ -1,4 +1,5 @@
 import Style from "./HerroSection.module.css";
+import { Link } from 'react-router-dom';
 
 const HerroSection = () => {
   return (
@@ -14,7 +15,7 @@ const HerroSection = () => {
                 suit <br /> your term length Upload Your Resume
               </h4>
               <div className={Style.btnBox}>
-                <button className={Style.button}>Explore Now</button>
+                <Link to={"/jobs"}><button className={Style.button}>Explore Now</button></Link>
                 <button className={Style.button}>Find Job</button>
               </div>
             </div>

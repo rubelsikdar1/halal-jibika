@@ -1,14 +1,11 @@
 
-import Header from './Components/Header/Header';
-import HerroSection from './Components/HerroSection/HerroSection';
-import Footer from './Components/Foother/Footer';
+
+import MainLayout from './MainLayout/MainLayout';
 
 const App = () => {
   return (
     <div>
-      <Header/>
-      <HerroSection/>
-      <Footer/>
+      <MainLayout/>
     </div>
   );
 };

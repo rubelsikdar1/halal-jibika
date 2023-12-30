@@ -1,6 +1,7 @@
 // import Style from "./Header.module.css"
 // import "./hd.css";
 import Style from "./Header.module.css"
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -16,22 +17,22 @@ const Header = () => {
             </div>
             <ul className={Style.menuItems}>
               <li>
-                <a href="#">Home</a>
+                <NavLink to={"home"}>Home</NavLink>
               </li>
               <li>
-                <a href="#"> Jobs</a>
+                <NavLink to={"jobs"}> Jobs</NavLink>
               </li>
               <li>
-                <a href="#">About</a>
+                <NavLink to={"about"}>About</NavLink>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <NavLink to={"contact"}>Contact</NavLink>
               </li>
               <li>
-                <a href="#">Favorite</a>
+                <NavLink to={"favorite"}>Favorite</NavLink>
               </li>
               <li>
-                <a href="#">Logn </a>
+                <NavLink to={"login"}>Logn </NavLink>
               </li>
             </ul>
             <img className={Style.logo} src="halal-jibika-logo.png" alt="" />

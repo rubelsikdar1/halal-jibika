@@ -15,7 +15,7 @@ const HerroSection = () => {
                 suit <br /> your term length Upload Your Resume
               </h4>
               <div className={Style.btnBox}>
-                <Link to={"/jobs"}><button className={Style.button}>Explore Now</button></Link>
+                <Link to={"/jobs"}> <button className={Style.button}>Explore Now</button></Link>
                 <button className={Style.button}>Find Job</button>
               </div>
             </div>

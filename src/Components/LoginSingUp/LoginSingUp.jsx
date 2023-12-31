@@ -3,13 +3,15 @@ import { useState } from "react";
 import Style from "./LoginSingUp.module.css";
 import { Link } from 'react-router-dom';
 import { IoLogoGoogleplus } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 
 const submitHandaler = (e)=>{
     e.preventDefault();
 }
-
-
 
 const LoginSingUp = () => {
     const [toggle, setToggle] = useState(true);
@@ -28,10 +30,10 @@ const LoginSingUp = () => {
                 <FaFacebookF/>
               </Link>
               < Link To={ ""} className="icon">
-                <i className="fa-brands fa-github" />
-              </Link>
+               <FaGithub/>
+               </Link>
               < Link To={ ""} className="icon">
-                <i className="fa-brands fa-linkedin-in" />
+              <FaLinkedinIn />
               </Link>
             </div>
             <span>or use your email for registeration</span>
@@ -46,16 +48,16 @@ const LoginSingUp = () => {
             <h1>Sign In</h1>
             <div className={Style.socialIcons}>
               < Link To={""} className="icon">
-                <i className="fa-brands fa-google-plus-g" />
+                <IoLogoGoogleplus />
               </Link>
               < Link To={"" } className="icon">
-                <i className="fa-brands fa-facebook-f" />
+                <FaFacebookF/>
               </Link>
               < Link To={"" } className="icon">
-                <i className="fa-brands fa-github" />
+              <FaGithub/>
               </Link>
               < Link To={ ""} className="icon">
-                <i className="fa-brands fa-linkedin-in" />
+              <FaLinkedinIn />
               </Link>
             </div>
             <span>or use your email password</span>

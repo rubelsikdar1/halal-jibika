@@ -1,0 +1,21 @@
+.jobBody{
+    background-color: #FAFAFA;
+}
+.header{
+    text-align: center;
+}
+.MainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.showLIst{
+    flex: 0.8;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.RightSidebar{
+    flex: 0.2;
+    padding: 10px;
+}

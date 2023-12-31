@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Google Internship Program",
-            "logo": "https://picsum.photos/200",
+            "logo": "https://img.freepik.com/premium-photo/senior-businesswoman-young-business-people-work-modern-office_52137-28330.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697068800&semt=ais",
             "companyName": "Google",
             "position": "Intern Developer",
             "description": "This is an internship opportunity from Google"
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "title": "Facebook Junior Development Program",
-            "logo": "https://picsum.photos/200",
+            "logo": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8am9ifGVufDB8fDB8fHww" ,
             "companyName": "Facebook",
             "position": "Junior Developer",
             "description": "This is a junior developer recruitment from Facebook"
@@ -19,7 +19,7 @@
         {
             "id": 3,
             "title": "Microsoft Senior Development Program",
-            "logo": "https://picsum.photos/200",
+            "logo": "https://www.pacificprime.com/blog/wp-content/uploads/PPCOM_updatearticle.jpg",
             "companyName": "Microsoft",
             "position": "Senior Developer",
             "description": "This is a junior developer recruitment from Microsoft"
@@ -27,15 +27,23 @@
         {
             "id": 4,
             "title": "X Internship Program",
-            "logo": "https://picsum.photos/200",
-            "companyName": "Microsoft",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNIoUesLBa6maPg-EOitEs-mFMWF6nI2qNLGWACc8SZYQWUGp9DDLUssGshmaTdfeBTGc&usqp=CAU",
+            "companyName": "Intel",
             "position": "Senior Developer",
             "description": "This is a junior developer recruitment from Microsoft"
         },
         {
             "id": 5,
-            "title": "X Internship Program",
-            "logo": "https://picsum.photos/200",
+            "title": "linkdin Internship Program",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZlKiqbg0Na9v_z1xWijNfKfxjZLd2Bx9Qg3yFnKCoi1Xn8e4nTdsWqQ4snKxLquJzi6s&usqp=CAU",
+            "companyName": "Google",
+            "position": "Senior Developer",
+            "description": "This is a junior developer recruitment from Microsoft"
+        },
+        {
+            "id": 5,
+            "title": "Github Internship Program",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ZVbbuXZZFP89UpOWOtI7eTm4E9gxBJJRAX5SclFKedielaqpWliRzLiVdltQuG__UU0&usqp=CAU",
             "companyName": "Microsoft",
             "position": "Senior Developer",
             "description": "This is a junior developer recruitment from Microsoft"

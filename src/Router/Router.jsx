@@ -7,6 +7,7 @@ import Favorite from './../Pages/Favorite/Favorite';
 import Jobs from './../Pages/Jobs/Jobs';
 import ErrorPage from './../Pages/ErrorPage/ErrorPage';
 import SingUp from './../Pages/Singup/SingUp';
+import JobDetails from './../Pages/Jobs/JobDetails/JobDetails';
 
 
 
@@ -46,6 +47,10 @@ const routes = createBrowserRouter([
             {
                 path:"login",
                 element: <SingUp/>
+            },
+            {
+                path:"jobdetails",
+                element: <JobDetails/>
             },
         ]
 

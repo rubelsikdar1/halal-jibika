@@ -2,7 +2,7 @@
 
 const Jobs = () => {
     return (
-        <div>
+        <div className="container">
             <h1>this is job page</h1>
         </div>
     );

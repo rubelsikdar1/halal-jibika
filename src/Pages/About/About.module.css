@@ -1,0 +1,22 @@
+.bg{
+    width: 100%;
+    height: auto;
+    background-color: #DEE0E6;;
+}
+.herroAria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    flex: .5;
+    padding: 20px;
+}
+.right{
+    flex: .5;
+
+}
+.right img{
+    width: 100%;
+    height: 500px;
+}

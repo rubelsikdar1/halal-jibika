@@ -12,3 +12,47 @@
     align-items: center;
     justify-content: flex-start;
 }
+.text h1{
+    color: #2E09B5;
+    font-size: 45px;
+    padding: 10px 0px;
+}
+.text p{
+    padding: 5px 0px;
+}
+.herroBtn{
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background-color: #E73761 ;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+.herroBtn:hover{
+    background-color:#86263d ;
+}
+
+
+  /* @media (max-width: 480px) {
+    .contactIneer {
+      padding: 0px 10px;
+    }
+    .bg{
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .text h1{
+        color: #2E09B5;
+        font-size: 25px; 
+    }
+    .contactIneer p{
+        display: none;
+    }
+  
+
+  } */

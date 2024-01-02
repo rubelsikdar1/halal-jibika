@@ -1,9 +1,12 @@
-// import Style from "./Header.module.css"
-// import "./hd.css";
+
+import { useContext } from "react";
 import Style from "./Header.module.css"
 import { NavLink } from 'react-router-dom';
+import jobContext from "../../Context/JobLIstContext/JobContext";
 
 const Header = () => {
+  const {favorite} = useContext(jobContext);
+
   return (
     <div className={Style.bg}>
       <div className="container">
@@ -29,10 +32,13 @@ const Header = () => {
                 <NavLink to={"contact"}>Contact</NavLink>
               </li>
               <li>
-                <NavLink to={"favorite"}>Favorite</NavLink>
+                <NavLink to={"favorite"}>Favorite({favorite.length})</NavLink>
               </li>
               <li>
-                <NavLink to={"login"}>Logn </NavLink>
+                <NavLink to={"login"}>Login </NavLink>
+              </li>
+              <li>
+                <NavLink to={"login"}>Logout </NavLink>
               </li>
             </ul>
             <img className={Style.logo} src="halal-jibika-logo.png" alt="" />

@@ -1,11 +1,28 @@
 
+import { useContext } from "react";
 import Style from "./SingleJobList.module.css";
 import { Link } from 'react-router-dom';
+import jobContext from "../../../Context/JobLIstContext/JobContext";
 
 
 
-const SingleJobList = ({jobs}) => {
-    console.log(jobs);
+const SingleJobList = ({jobs, btnToggle}) => {
+    // const btnToggle = false;
+    const {setMoreDetails, setFavorite, favorite}= useContext(jobContext);
+
+    const detailsHandaler = (jobs)=>{
+        setMoreDetails(jobs)
+    }
+    const AddFavoriteHandaler = (jobs)=>{
+        setFavorite((prev)=>{
+           return [...prev, jobs];
+        })
+    }
+
+    const deleteFavoriteHandaler = (id)=>{
+        const filterdata = favorite.filter((value)=> value.id !==  id);
+        setFavorite(filterdata)
+    }
 
     return (
         <div>
@@ -23,9 +40,10 @@ const SingleJobList = ({jobs}) => {
                         </ul>
                     </div>
                     <div className={Style.buttonBox}>
-                        <Link><button className={Style.btn}>Apply job </button></Link> 
-                        <Link><button className={Style.btn}>Add to Favorite </button></Link> 
-                        <Link><button className={Style.btn}>More Details </button></Link> 
+                        <Link to={"/apply"}><button className={Style.btn}>Apply job </button></Link> 
+                        { btnToggle ? <Link><button onClick={()=> deleteFavoriteHandaler(jobs.id)} className={Style.btn}>Delete Favorite </button></Link> :
+                        <Link><button onClick={()=> AddFavoriteHandaler(jobs)} className={Style.btn}>Add to Favorite </button></Link> }
+                        <Link to={"/jobdetails"}><button onClick={()=>detailsHandaler(jobs)} className={Style.btn}>More Details </button></Link> 
                     </div>
                 </div>
             </div>

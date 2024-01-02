@@ -1,17 +1,20 @@
+import { useContext } from "react";
 import Style from "./JobDetails.module.css";
+import jobContext from './../../../Context/JobLIstContext/JobContext';
 
 const JobDetails = () => {
+  const {moreDetails}= useContext(jobContext);
   return (
     <div className={Style.bg}>
       <div className={`${Style.top} container`}>
         <div className={Style.mainBox}>
           <div className={Style.heading}>
             <div className={Style.left}>
-              <h1>lorem1000</h1>
-              <h3>kkkkkkk</h3>
+              <h1>{moreDetails?.title}</h1>
+              <h3>Possition : {moreDetails?.position}</h3>
             </div>
             <div className={Style.left}>
-                <img className={Style.img} src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8am9ifGVufDB8fDB8fHww" alt="" />
+                <img className={Style.img} src={moreDetails?.logo} alt="" />
             </div>
           </div>
           <div className={Style.date}>
@@ -51,18 +54,8 @@ const JobDetails = () => {
               <h2>Job Responsibilities & Context</h2>
               <div className={Style.dic}>
                 <p>
-                  {" "}
                   <br />
-                  We are looking for a female "Executive Assistant" for a
-                  well-known Bilateral Chamber Hard-working and energetic.
-                  Expert in internet browsing. Conduct special studies and
-                  present briefs, and reports. Preparation of draft of various
-                  letters, and emails as per instruction. Maintain and update
-                  records, files, and documents in an organized manner. Taking
-                  notes of the board meetings and composition of office memos,
-                  reports, etc. as per instruction. Writing of meeting minutes.
-                  Composition and compilation of news for publication of the
-                  newsletter. Dealing with incoming and outgoing correspondence.
+                  {moreDetails?.description}
                 </p>
               </div>
               <hr />

@@ -8,6 +8,7 @@ import Jobs from './../Pages/Jobs/Jobs';
 import ErrorPage from './../Pages/ErrorPage/ErrorPage';
 import SingUp from './../Pages/Singup/SingUp';
 import JobDetails from './../Pages/Jobs/JobDetails/JobDetails';
+import JobApplication from './../Components/JobApplication/JobApplication';
 
 
 
@@ -52,6 +53,10 @@ const routes = createBrowserRouter([
                 path:"jobdetails",
                 element: <JobDetails/>
             },
+            {
+                path:"apply",
+                element:<JobApplication/>
+            }
         ]
 
     },

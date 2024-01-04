@@ -15,6 +15,7 @@ import AddJob from './../Components/AddJob/AddJob';
 
 
 
+
 const routes = createBrowserRouter([
     {
         path:"/",
@@ -45,14 +46,8 @@ const routes = createBrowserRouter([
                 element: <Jobs/>
             },
             {
-                path:"jobs",
+                path:"jobs/add",
                 element: <Jobs/>,
-                children:[
-                    {
-                        path:"add",
-                        element:<AddJob/>
-                    }
-                ]
             },
 
             {
@@ -75,6 +70,18 @@ const routes = createBrowserRouter([
                 path:"yourpost",
                 element:<YourPost/>
             },
+            {
+                path:"yourpost/:id",
+                element:<YourPost/>
+            },
+            // {
+            //     path:"newpost",
+            //     element:
+            // },
+            {
+                path:"addjob",
+                element:<AddJob/>
+            }
          
         ]
 

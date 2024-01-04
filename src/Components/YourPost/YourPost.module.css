@@ -1,0 +1,54 @@
+
+
+.jobBody{
+    background-color: #FAFAFA;
+}
+.header{
+    text-align: center;
+    margin: 10px;
+}
+.MainContainer{
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.showLIst{
+    flex: 1;
+    /* border-right: 1px solid black; */
+    padding: 10px;
+    margin: 0 auto;
+}
+/* .RightSidebar{
+    
+    flex: 0.2;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+} */
+
+.box{
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    
+}
+
+.box h2{
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #006D93;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#0097A6 ;
+}

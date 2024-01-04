@@ -11,8 +11,8 @@ import logo from "../../assets/halal-jibika-logo.png"
 const Header = () => {
   const {favorite} = useContext(jobContext);
   const [user] = useAuthState(auth);
-  const users = useAuthState(auth);
-  console.log(users)
+
+
 
   const handleLogout = ()=>{
     signOut(auth);

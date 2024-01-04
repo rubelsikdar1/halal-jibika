@@ -30,8 +30,8 @@ const Jobs = () => {
                         <div className={Style.box}>
                             <h2> Your job Post</h2>
                             <hr />
-                            <Link><button  className={Style.btn}>Your posted jobs list </button></Link>
-                            <Link to= "/"><button  className={Style.btn}>New job post </button></Link>
+                            <Link to="/yourpost" ><button  className={Style.btn}>Your posted jobs list </button></Link>
+                            <Link to= "/addjob"><button  className={Style.btn}>New job post </button></Link>
                             <Link to="/favorite"><button  className={Style.btn}> Your Favorite jobs({favorite.length}) </button></Link>
                         </div>
                     </div>

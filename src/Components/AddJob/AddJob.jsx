@@ -25,9 +25,9 @@ const AddJob = () => {
     const onSubmit = data =>setFromData(data) ;
     console.log(fromData);
 
-    // useEffect(()=>{
-    //     axios.get("")
-    // },[])
+    useEffect(()=>{
+        axios.post("")
+    },[])
 
     return (
         

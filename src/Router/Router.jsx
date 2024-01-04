@@ -9,6 +9,9 @@ import ErrorPage from './../Pages/ErrorPage/ErrorPage';
 import SingUp from './../Pages/Singup/SingUp';
 import JobDetails from './../Pages/Jobs/JobDetails/JobDetails';
 import JobApplication from './../Components/JobApplication/JobApplication';
+import EditJobDetails from './../Components/EditJobDetails/EditJobDetails';
+import YourPost from "../Components/YourPost/YourPost";
+import AddJob from './../Components/AddJob/AddJob';
 
 
 
@@ -43,8 +46,15 @@ const routes = createBrowserRouter([
             },
             {
                 path:"jobs",
-                element: <Jobs/>
+                element: <Jobs/>,
+                children:[
+                    {
+                        path:"add",
+                        element:<AddJob/>
+                    }
+                ]
             },
+
             {
                 path:"login",
                 element: <SingUp/>
@@ -56,7 +66,16 @@ const routes = createBrowserRouter([
             {
                 path:"apply",
                 element:<JobApplication/>
-            }
+            },
+            {
+                path:"editjob",
+                element:<EditJobDetails/>
+            },
+            {
+                path:"yourpost",
+                element:<YourPost/>
+            },
+         
         ]
 
     },

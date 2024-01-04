@@ -1,10 +1,12 @@
 import Style from "./Favorite.module.css";
 import SingleJobList from './../../Components/JobsComponents/SingleJobList/SingleJobList';
-import { useContext } from "react";
+import { useContext} from "react";
 import jobContext from "../../Context/JobLIstContext/JobContext";
+
 
 const Favorite = () => {
     const {favorite} = useContext(jobContext);
+
     return (
         <div>
             <div className={Style.jobBody}>

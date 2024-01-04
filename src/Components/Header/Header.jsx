@@ -3,9 +3,20 @@ import { useContext } from "react";
 import Style from "./Header.module.css"
 import { NavLink } from 'react-router-dom';
 import jobContext from "../../Context/JobLIstContext/JobContext";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from './../../firebase.config';
+import { signOut } from "firebase/auth";
+import logo from "../../assets/halal-jibika-logo.png"
 
 const Header = () => {
   const {favorite} = useContext(jobContext);
+  const [user] = useAuthState(auth);
+  const users = useAuthState(auth);
+  console.log(users)
+
+  const handleLogout = ()=>{
+    signOut(auth);
+  }
 
   return (
     <div className={Style.bg}>
@@ -34,14 +45,16 @@ const Header = () => {
               <li>
                 <NavLink to={"favorite"}>Favorite({favorite.length})</NavLink>
               </li>
+
+             { user ? <li>
+                <NavLink  onClick={handleLogout}>Logout </NavLink>
+              </li> :
               <li>
                 <NavLink to={"login"}>Login </NavLink>
-              </li>
-              <li>
-                <NavLink to={"login"}>Logout </NavLink>
-              </li>
+              </li>}
+
             </ul>
-            <img className={Style.logo} src="halal-jibika-logo.png" alt="" />
+            <img className={Style.logo} src={logo}alt="" />
           </div>
         </nav>
       </div>

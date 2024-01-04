@@ -44,6 +44,7 @@ const SingleJobList = ({jobs, btnToggle}) => {
                         { btnToggle ? <Link><button onClick={()=> deleteFavoriteHandaler(jobs.id)} className={Style.btn}>Delete Favorite </button></Link> :
                         <Link><button onClick={()=> AddFavoriteHandaler(jobs)} className={Style.btn}>Add to Favorite </button></Link> }
                         <Link to={"/jobdetails"}><button onClick={()=>detailsHandaler(jobs)} className={Style.btn}>More Details </button></Link> 
+                        <Link to={`/${jobs.id}`}><button onClick={()=>detailsHandaler(jobs)} className={Style.btn}>More </button></Link> 
                     </div>
                 </div>
             </div>

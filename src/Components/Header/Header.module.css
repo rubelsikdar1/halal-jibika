@@ -1,12 +1,15 @@
 
+
+
 .navbar input[type="checkbox"],
 .navbar .hamburgerLines{
     display: none;
 }
 .bg{
-    background-image: url(./halal-jibika-herro.png);
+    background-image: url("../../assets/herro-bg-img.png");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 20;
 }
 
 .container{

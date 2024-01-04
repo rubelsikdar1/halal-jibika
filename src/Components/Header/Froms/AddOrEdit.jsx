@@ -1,17 +1,17 @@
 import styles from "./AddOrEdit.module.css";
 
-const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit }) => {
+const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit,onSubmit }) => {
   return (
     <div>
       <div className={styles.body}>
         <div className={styles.container}>
           <div className={styles.title}>{heading}</div>
           <div className={styles.content}>
-            <form action="#">
+            <form action="#" onSubmit={ handleSubmit(onSubmit)}>
               <div className={styles["user-details"]}>
                 <div className={styles["input-box"]}>
                   <span className={styles.details}>{lable.title}</span>
-                  <input type="text" placeholder={lable.title} required />
+                  <input type="text" placeholder={lable.title} {...register("title")} required />
                 </div>
                 <div className={styles["input-box"]}>
                   <span className={styles.details}>{lable.companyName}</span>
@@ -19,21 +19,23 @@ const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit }) => {
                     type="text"
                     placeholder={lable.companyName}
                     required
+                    {...register("companyName")}
                   />
                 </div>
                 <div className={styles["input-box"]}>
                   <span className={styles.details}>{lable.posstion}</span>
-                  <input type="text" placeholder={lable.posstion} required />
+                  <input type="text" placeholder={lable.posstion} {...register("posstion")} required />
                 </div>
                 <div className={styles["input-box"]}>
                   <span className={styles.details}>{lable.despription}</span>
-                  <input type="text" placeholder={lable.despription} required />
+                  <input type="text" placeholder={lable.despription} {...register("despription")} required />
                 </div>
                 <div className={styles["input-box"]}>
                   <span className={styles.details}>{lable.logo}</span>
                   <input
                     type="text"
                     placeholder={lable.logo}
+                    {...register("logo")}
                     required
                   />
                 </div>
@@ -43,6 +45,7 @@ const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit }) => {
                     type="text"
                     placeholder={lable.address}
                     required
+                    {...register("address")}
                   />
                 </div>
                 <div className={styles["input-box"]}>
@@ -51,6 +54,7 @@ const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit }) => {
                     type="text"
                     placeholder={lable.contact}
                     required
+                    {... register("contact")}
                   />
                 </div>
                 <div className={styles["input-box"]}>
@@ -59,6 +63,7 @@ const AddOrEdit = ({ lable, heading,buttoName,register,handleSubmit }) => {
                     type="text"
                     placeholder={lable.sallery}
                     required
+                    {...register("sallery")}
                   />
                 </div>
               </div>

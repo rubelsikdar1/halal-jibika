@@ -1,10 +1,10 @@
 
 // import { useParams } from 'react-router-dom';
 // import EditJobs from './../EditJobs/EditJobs';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AddOrEdit from './../Header/Froms/AddOrEdit';
 import { useForm } from "react-hook-form";
-import { axios } from 'axios';
+// import { axios } from 'axios';
 
 const inputFeld = [{
     title:"Your Job Title",
@@ -21,7 +21,9 @@ const inputFeld = [{
 const AddJob = () => {
     
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const [fromData, setFromData]=useState(null);
+    const onSubmit = data =>setFromData(data) ;
+    console.log(fromData);
 
     // useEffect(()=>{
     //     axios.get("")
@@ -38,7 +40,7 @@ const AddJob = () => {
                  buttoName={"Add Job"}
                  handleSubmit={handleSubmit}
                  register={register}
-
+                 onSubmit={onSubmit}
                  />)
             }
             

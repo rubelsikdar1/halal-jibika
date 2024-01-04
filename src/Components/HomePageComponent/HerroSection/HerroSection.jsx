@@ -1,5 +1,6 @@
 import Style from "./HerroSection.module.css";
 import { Link } from 'react-router-dom';
+import herroimg from "../../../assets/herro-bg-img.png"
 
 const HerroSection = () => {
   return (

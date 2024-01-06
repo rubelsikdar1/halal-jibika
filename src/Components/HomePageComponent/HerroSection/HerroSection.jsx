@@ -1,9 +1,15 @@
 import Style from "./HerroSection.module.css";
 import { Link } from 'react-router-dom';
 import herroimg from "../../../assets/herro-bg-img.png"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HerroSection = () => {
+
+  const notify = () => toast("Wow so easy !");
+
   return (
+  
     <div className={Style.bg}>
       <div className="container">
         <div className={Style.innerContainer}>
@@ -17,7 +23,8 @@ const HerroSection = () => {
               </h4>
               <div className={Style.btnBox}>
                 <Link to={"/jobs"}> <button className={Style.button}>Explore Now</button></Link>
-                <button className={Style.button}>Find Job</button>
+                <button onClick={notify} className={Style.button}>Find Job</button>
+                <ToastContainer />
               </div>
             </div>
           </div>

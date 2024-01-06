@@ -1,7 +1,7 @@
 
 // import { useParams } from 'react-router-dom';
 // import EditJobs from './../EditJobs/EditJobs';
-import { useEffect, useState } from 'react';
+
 import AddOrEdit from './../Header/Froms/AddOrEdit';
 import { useForm } from "react-hook-form";
 import  axios  from 'axios';
@@ -20,9 +20,10 @@ const inputFeld = [{
 
 const AddJob = () => {
     
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data =>{
-        axios.post("http://localhost:9000/jobs"),fromData
+        console.log(data)
+        axios.post("http://localhost:9000/jobs"),data
         .then(res=>console.log(res.data))
         .catch(error=>console.log("error send data ", error))
     } ;
